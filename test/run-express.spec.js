@@ -20,9 +20,7 @@ describe("When Express is run in test runtime", () => {
   });
 
   afterAll(() => {
-    server.close(() => {
-      return;
-    });
+    server.close();
   });
 
   describe(`a request submitted /success during test runtime`, () => {
